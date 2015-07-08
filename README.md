@@ -2,6 +2,12 @@
 
 Notification component for AngularJS. Renders a nice stack of various text messages.
 
+## Installation
+
+```shell
+bower install mgr-notifications
+```
+
 ## Usage
 
 ```html
