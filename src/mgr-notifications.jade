@@ -1,0 +1,16 @@
+ul.mgr-notifications(ng-class='notifications.updateClasses()')
+
+	li.mgr-notification(
+		ng-repeat='notification in notifications.list track by $index'
+		ng-class='"mgr-" + notification.type || "default"'
+	)
+
+		div.mgr-notification-text
+			p(ng-bind='notification.text')
+
+		button.mgr-dismiss-notification(
+			type='button'
+			title='Dismiss'
+			ng-click='notifications.dismiss($index)'
+			ng-if='!notifications.permanent'
+		)

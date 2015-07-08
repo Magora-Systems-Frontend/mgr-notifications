@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>mgr.notifications</title>
+		<link rel="stylesheet" href="./dist/mgr-notifications.css" />
+		<link rel="stylesheet" href="./demo/demo.css" />
+	</head>
+	<body ng-app="demo">
+		<article demo id="demo">
+
+			<header>
+				<h1>mgr.notifications</h1>
+				<p>Notification component for AngularJS.</p>
+			</header>
+
+			<ul id="actions">
+				<li><button ng-click="demo.showGenericNotification()">Show generic notification</button></li>
+				<li><button ng-click="demo.showPositiveNotification()">Show positive notification</button></li>
+				<li><button ng-click="demo.showNegativeNotification()">Show negative notification</button></li>
+				<li><button ng-click="demo.showWarning()">Show warning</button></li>
+				<li>
+					<input id="toggleSticky" type="checkbox" ng-model="demo.isSticky">
+					<label for="toggleSticky">Sticky</label>
+				</li>
+				<li>
+					<input id="togglePermanent" type="checkbox" ng-model="demo.isPermanent">
+					<label for="togglePermanent">Permanent</label>
+				</li>
+				<li><button ng-click="demo.clearNotifications()">Clear notifications</button></li>
+				<li><button ng-click="demo.reset()">Reset notifications</button></li>
+			</ul>
+
+			<div mgr-notifications id="notifications" ng-model="demo.notifications" sticky="demo.isSticky" permanent="demo.isPermanent"></div>
+
+		</article>
+
+		<script src="./bower_components/angular/angular.min.js"></script>
+		<script src="./dist/mgr-notifications.js"></script>
+		<script src="./demo/demo.js"></script>
+	</body>
+</html>

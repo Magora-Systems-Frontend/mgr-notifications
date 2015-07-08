@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+
+body {
+	font: 400 13pt/1 sans-serif;
+	margin: 5% 20%;
+}
+
+#actions,
+#notifications {
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+#actions {
+	list-style: none;
+}
+
+#actions li {
+	margin: 1rem 0;
+}
+
+label {
+	display: inline-block;
+}
+
+input,
+button {
+	font: inherit;
+}
