@@ -1,4 +1,13 @@
 {
+	"package": {
+		"root": "./",
+		"name": "mgr.notifications",
+		"json": [
+			"./bower.json",
+			"./package.json"
+		]
+	},
+
 	"src": {
 		"root": "./src/",
 		"jade": "./src/**/*.jade",
@@ -11,7 +20,9 @@
 		"filenames": {
 			"css": "mgr-notifications.css",
 			"js":  "mgr-notifications.js"
-		}
+		},
+		"css": "./dist/**/*.css",
+		"js":  "./dist/**/*.js"
 	},
 
 	"tmp": {
